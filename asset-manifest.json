@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/avito-test-app/static/css/main.54782034.chunk.css",
+    "main.js": "/avito-test-app/static/js/main.d6cbd0e9.chunk.js",
+    "main.js.map": "/avito-test-app/static/js/main.d6cbd0e9.chunk.js.map",
+    "runtime-main.js": "/avito-test-app/static/js/runtime-main.a2241e9c.js",
+    "runtime-main.js.map": "/avito-test-app/static/js/runtime-main.a2241e9c.js.map",
+    "static/js/2.83b6d563.chunk.js": "/avito-test-app/static/js/2.83b6d563.chunk.js",
+    "static/js/2.83b6d563.chunk.js.map": "/avito-test-app/static/js/2.83b6d563.chunk.js.map",
+    "static/js/3.f740d9b6.chunk.js": "/avito-test-app/static/js/3.f740d9b6.chunk.js",
+    "static/js/3.f740d9b6.chunk.js.map": "/avito-test-app/static/js/3.f740d9b6.chunk.js.map",
+    "index.html": "/avito-test-app/index.html",
+    "static/css/main.54782034.chunk.css.map": "/avito-test-app/static/css/main.54782034.chunk.css.map",
+    "static/js/2.83b6d563.chunk.js.LICENSE.txt": "/avito-test-app/static/js/2.83b6d563.chunk.js.LICENSE.txt",
+    "static/media/loader.e88c5d6a.svg": "/avito-test-app/static/media/loader.e88c5d6a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2241e9c.js",
+    "static/js/2.83b6d563.chunk.js",
+    "static/css/main.54782034.chunk.css",
+    "static/js/main.d6cbd0e9.chunk.js"
+  ]
+}
