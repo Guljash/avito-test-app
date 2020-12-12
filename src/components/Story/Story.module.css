@@ -1,0 +1,36 @@
+.rootComment {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    max-width: 1000px;
+}
+
+.wrapper{
+    max-width: 1300px;
+}
+
+.title{
+    font-size: 30px;
+    margin: 20px 0 10px 0;
+}
+
+button{
+    background: linear-gradient(to right, #2e9ef6, #2596f0);
+    border: none;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0px 3px 3px 0px rgba(34, 60, 80, 0.2);
+}
+
+@media all and (max-width:400px){
+    .wrapper{
+        width: 300px;
+    }
+}

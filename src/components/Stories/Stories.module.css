@@ -1,0 +1,48 @@
+.autors{
+    margin: 0 auto;
+    font-size: 25px;
+    color: gray;
+}
+
+.li{
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttonWrapper{
+    margin: 10px 0 10px 0;
+    display: flex;
+}
+
+.buttonWrapper button{
+    background: linear-gradient(to right, #2e9ef6, #2596f0);
+    border: none;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px 0px rgba(34, 60, 80, 0.2);
+}
+
+.buttonWrapper button:nth-child(2){
+    margin-left: 10px;
+}
+
+.li:hover{
+    transform: scale(1.07);
+    transition: 0.2s;
+}
+
+@media all and (max-width:400px){
+    .autors{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .li{
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid rgba(175, 175, 175, 0.5);
+    }
+}
