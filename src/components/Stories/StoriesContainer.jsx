@@ -11,10 +11,10 @@ class StoriesContainer extends React.Component {
     }
     let newsType
     if (newsTypeBool) {
-      newsType = "new"
+      newsType = "top"
     }
     else {
-      newsType = "top"
+      newsType = "new"
     }
     const url = `https://hacker-news.firebaseio.com/v0/${newsType}stories.json`;
     try {
@@ -23,6 +23,7 @@ class StoriesContainer extends React.Component {
         throw new Error("Response Error:" + response.text);
       }
       const json = await response.json();
+      console.log(json);
       const promises = json
         .slice(0, 100)
         .map(id =>
@@ -31,7 +32,13 @@ class StoriesContainer extends React.Component {
           )
         );
       const result = await Promise.all(promises);
+      result.forEach((el, i) => {
+        if (el === null){
+          result.splice(i, 1)
+        }
+      })
       this.props.setStories(result);
+      console.log(result);
       this.props.toggleIsFetching(false)
     } catch (err) {
       console.error(err);

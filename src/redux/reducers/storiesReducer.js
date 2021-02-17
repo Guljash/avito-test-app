@@ -6,7 +6,7 @@ const TOGGLE_NEWS_TYPE = "TOGGLE_NEWS_TYPE"
 
 const initialState = {
     storyData: {},
-    storiesData: [],
+    storiesData: [{id:123}],
     commentsData: [],
     subCommentsData: [],
     isFetching: false,

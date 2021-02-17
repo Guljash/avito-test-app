@@ -8,6 +8,7 @@ const Stories = (props) => {
         const dateObject = new Date(unixDate * 1000)
         return dateObject.toLocaleString()
     }
+    console.log(props.state.storiesData);
 
     return (
         <div>
@@ -17,7 +18,8 @@ const Stories = (props) => {
                         <button onClick={() => {props.reload()}}>Reload</button>
                         <button onClick={() => {props.onToggleNewsTypeClick(!props.state.newsType)}}>{props.state.newsType ? 'Get top stories' : 'Get new stories'}</button>
                     </div>
-                    <ul>{
+                    <ul>
+                        {
                         props.state.storiesData.map(el => (
                             <Link key={el.id} to={`/${el.id}`}>
                                 <li className={styles.li} >
@@ -27,7 +29,8 @@ const Stories = (props) => {
                                     <div>{getDate(el.time)}</div>
                                 </li>
                             </Link>
-                        ))}
+                        ))
+                        }
                     </ul>
                 </div>}
         </div>
